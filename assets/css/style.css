@@ -1,0 +1,1415 @@
+/*
+  Theme Name: 
+  Author: 
+  Support: 
+  Description: 
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+01.
+02.
+03.
+04.
+05.
+06.
+07.
+08.
+09.
+10.
+-----------------------------------
+CSS Index End */
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,700i,800|Playfair+Display:400,500,500i,600,600i,700,700i,800,900,900i|Raleway:400,500,600,600i,700,700i,800&display=swap');
+
+/* 
+  font-family: 'Open Sans',sans-serif;
+  font-family: 'Playfair Display',serif;
+  font-family: 'Raleway',sans-serif;
+*/
+
+
+/************** Default CSS **************/
+:root {
+  --body: #ffff;
+  --body-clr: #676767;
+  --a: #224f6b;
+  --p: #676767;
+  --h: #676767;
+  --def: #A348FF;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: var(--body);
+  color: var(--body-clr);
+}
+
+a,
+.button,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--def);
+  text-transform: capitalize;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--p);
+  margin-bottom: 15px;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--a);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+a:hover {
+  color: var(--def);
+}
+
+
+/* def class */
+.def-gradiant {
+  color: white;
+  background: #7E57C2;
+  background: -webkit-linear-gradient(250deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+  background: linear-gradient(-160deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/************** Default CSS End **************/
+
+
+/************** Template CSS **************/
+
+
+/* nav */
+nav {
+  background-color: #B0D8E2;
+  padding: 15px;
+}
+
+.nav-logo a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+nav .nav-logo a:hover {
+  color: #fff;
+}
+
+/* hero area */
+section.hero-area {
+  /* background-image: url('../img/hero-bg.jpeg');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+
+section.hero-area:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .8;
+}
+
+.hero-wrap {
+  padding: 40px 0;
+}
+
+.hero-wrap h1 {
+  font-weight: 300;
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-wrap h2 {
+  font-size: 60px;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-btn a {
+  display: inline-block;
+  border: 2px solid #ae3434;
+  color: #ae3434;
+  padding: 20px 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-btn a:hover {
+  color: #fff;
+  background: #ef4646;
+  border-color: #ef4646;
+}
+
+.hero-vdo video {
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-vdo {
+  margin-bottom: 20px;
+}
+
+.hero-add-cart a img {
+  width: auto;
+}
+
+.hero-add-cart {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.hero-brand img {
+  width: auto;
+}
+
+/* custom video section  */
+.video-area {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+video#myVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.play-button img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.control-area {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.video-area:hover .control-area {
+  opacity: 1;
+}
+
+.control-area:hover {
+  background: #A348FF;
+}
+
+.push-button img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.push-button img {
+  display: none;
+}
+
+
+/* about */
+section.about-area {
+  padding: 100px 0;
+}
+
+.about-text {
+  padding: 35px;
+  border: 1px solid var(--def);
+}
+
+.about-text p {
+  color: var(--def);
+  font-weight: 400;
+}
+
+.about-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.about-text p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-img {
+  margin-bottom: 30px;
+}
+
+.about-img-text h3 {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.about-img-text a {
+  display: block;
+  color: #ae3434;
+}
+
+section.dtsf {
+  padding: 60px 0;
+  padding-bottom: 45px;
+}
+
+.dtsf-wrap h2 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+
+
+.dtsf-wrap p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.result-text h2 {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 50px;
+  font-family: 'Playfair Display', serif;
+  text-transform: none;
+}
+
+section.result-area {
+  padding: 80px 0px;
+}
+
+.result-list ul li {
+  list-style-type: disc;
+  margin-bottom: 20px;
+  display: list-item;
+}
+
+.result-list ul {
+  list-style-type: disc;
+}
+
+/* lastweek-area */
+.lastweek-area {
+  padding: 130px 0;
+  /* background-image: url(../img/last-week-bg.jpg);
+  background-position: center;
+  background-size: cover; */
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.lastweek-area:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .9;
+}
+
+.last-week {
+  position: relative;
+}
+
+.last-week p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.last-week h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* the best */
+.tb-text p {
+  font-size: 18px;
+}
+
+.tb-headline {
+  padding: 60px 40px;
+  padding-right: 160px;
+}
+
+.tb-headline h2 {
+  font-size: 34px;
+  color: #fff;
+  line-height: 52px;
+  font-weight: 400;
+  text-transform: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.the-best {
+  padding: 40px 0;
+}
+
+.tb-text {
+  padding: 0 60px;
+  padding-top: 90px;
+}
+
+/* therapy area */
+section.therapy-area {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #000;
+}
+
+.therapy-text h2 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.therapy-text {
+  margin-bottom: 60px;
+}
+
+.therapy-vdo {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+.therapy-vdo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.before-bagin {
+  padding: 100px 0;
+}
+
+.bb-heading h2 {
+  text-align: center;
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+
+.bb-box {
+  border: 1px solid #a348ff;
+  padding: 35px;
+}
+
+.bb-box h2 {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bb-box span.clc-fm {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--def);
+}
+
+.bb-box .card-header {
+  text-align: left;
+  border-bottom: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.bb-box .card-header h2 {
+  text-align: left;
+}
+
+.bb-box .card-body {
+  padding: 0;
+}
+
+.bb-box .btn-link {
+  color: #a348ff;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: Raleway;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+
+.bb-box .btn-link:hover {
+  color: #a348ff;
+  text-decoration: none;
+}
+
+.bb-box .btn-link:focus {
+  text-decoration: none;
+}
+
+.bb-box .card {
+  border: none !important;
+}
+
+.bb-box .btn-link:before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.bb-box .btn-link.collapsed:before {
+  content: '+';
+}
+
+.bb-box .card-body p {
+  font-size: 18px;
+}
+
+section.capable-area {
+  padding: 40px 0;
+  position: relative;
+  background-image: url('../img/hand-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+section.capable-area:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  background: #7E57C2;
+  background: -webkit-linear-gradient(250deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+  background: linear-gradient(-160deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+}
+
+.capable-content h2 {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  padding: 0 130px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.capable-content p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* witness area */
+section.witness-area {
+  padding: 100px 0;
+}
+
+.witness-content h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-family: Playfair Display;
+}
+
+/*---------------------------------------------------*/
+
+
+/* Anatomy Of A Marital Crisis */
+section.anatomy-marital-wrapper {
+  background-color: rgb(242, 243, 247);
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.anatomy-text h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.anatomy-text p {
+  font-weight: 600;
+}
+
+/* Anatomy Of A Marital Crisis */
+
+
+/* dime for every time */
+section.anatomy-marital-wrapper {
+  background-color: rgb(242, 243, 247);
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.anatomy-text h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.anatomy-text p {
+  font-weight: 600;
+}
+
+.dime-every-time-box {
+  height: 100%;
+  position: relative;
+  top: -30px;
+  padding: 0 70px;
+}
+
+.dime-every-time-box h2 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 33px;
+  line-height: 53px;
+}
+
+.dime-et-text {
+  padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+/* dime for every time end */
+
+
+/* Inevitable Issues */
+.inevitable-issues-content h3 {
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.inevitable-issues-content p {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: none;
+  line-height: 40px;
+  padding: 0 10px;
+  color: var(--def);
+}
+
+section.inevitable-issues-wrapper {
+  padding: 110px 0;
+}
+
+/* Inevitable Issues end */
+
+
+/* Stages Crisis */
+section.stages-crisis-wrapper {
+  background-color: rgb(242, 243, 247);
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.stages-crisis-content h2 {
+  font-size: 34px;
+  line-height: 40px;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Stages Crisis end */
+
+
+/* Tested And Retested */
+.tested-retested-content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+section.tested-retested-wrapper {
+  padding: 100px 0;
+}
+
+/* Tested And Retested end */
+
+
+
+/* innocent beginnings */
+.innocent-beginnings-wrapper {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background: transparent;
+  min-height: 580px
+}
+
+.innocent-beginnings-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.innocent-beginnings-content h3 {
+  color: #fff;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: none;
+}
+
+.innocent-beginnings-content p {
+  color: rgba(255, 255, 255);
+  font-weight: 600;
+}
+
+.innocent-beginnings-content {
+  padding: 0 30px;
+}
+
+/* innocent beginnings end */
+
+
+/* emphasis work */
+
+section.emphasis-work-wrapper {
+  background-color: rgb(242, 243, 247);
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.emphasis-work-content h2 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  max-width: 80%;
+  text-transform: none;
+}
+
+/* emphasis work end */
+
+
+/* About Avoiding Divorce */
+
+.about-avoiding-divorce-wrapper {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.about-avoiding-divorce-content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+/* About Avoiding Divorce end */
+
+
+/* experience current marriage */
+section.experience-current-marriage-wrapper {
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.experience-current-marrige-content h2 {
+  color: rgba(255, 255, 255);
+  font-family: "Playfair Display";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: none;
+}
+
+.experience-current-marrige-content p {
+  color: rgba(255, 255, 255);
+  padding-right: 5px;
+}
+
+/* experience current marriage end */
+
+
+/* Save The Marriage SYSTEM */
+.save-marriage-system-wrapper {
+  padding: 110px 0;
+}
+
+.save-marrige-system-content {
+  padding: 0 40px;
+}
+
+.save-marrige-system-content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.save-marrige-system-content p b {
+  font-weight: inherit;
+}
+
+.save-marrige-system-content h3 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 33px;
+  text-transform: initial;
+  line-height: 53px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Save The Marriage SYSTEM */
+
+
+/* testomonial section */
+.testomonial-section-wrapper {
+  position: relative;
+  background: transparent;
+  padding-top: 60px;
+}
+
+.testomonial-section-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background: #7E57C2;
+  background: -webkit-linear-gradient(250deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+  background: linear-gradient(-160deg, #7e57c2 0%, #7e57c2 50%, #1AAC9C 80%, #8AEFC8 100%);
+}
+
+.testomonial-section-title h2 {
+  color: rgba(255, 255, 255);
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.testomonial-section-title p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.testomonial-section-title {
+  margin-bottom: 110px;
+}
+
+.single-testomonial p {
+  color: #fff;
+}
+
+.single-testomonial {
+  margin-bottom: 60px;
+}
+
+.single-testomonial h6 {
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  padding-left: 5px;
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* testomonial section end */
+
+
+/*---------------------------------------------------*/
+
+
+
+/* discover list start */
+.discover-list {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.discover-heading h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.discover-li ul li {
+  list-style: disc;
+}
+
+.discover-li ul li h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* discover list end */
+
+
+/* marriage mystem section start */
+.marriage-mystem {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.marriage-mystem-left h2 {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  padding-right: 100px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+/* marriage mystem section end */
+
+/* act now start  */
+.act-now-heading h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.act-now-des h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+section.act-now-section {
+  background: #F2F3F7;
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.act-now-des h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* act now end  */
+
+/* included part start  */
+.included-part-heading h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 33px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+section.included-part-section {
+  padding-top: 95px;
+}
+
+.included-part-heading {
+  padding-bottom: 130px;
+}
+
+.included-part1-des h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.included-part1-des h5 span {
+  font-size: 19px;
+  color: #700dd4fa;
+}
+
+.included-part1-des p {
+  padding: 0px 20px;
+  margin-bottom: 18px;
+}
+
+section.included-part-2 {
+  background: #F2F3F7;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+section.included-part-3 {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+/* included part end */
+
+/* modules create start  */
+.modules-create {
+  padding: 90px 0px;
+}
+
+.modules-create-left h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.modules-create-right p {
+  padding: 0px 16px;
+}
+
+.modules-create-right h5 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+/* modules create end */
+
+/* LIMITED Time section start  */
+section.limited-time-section {
+  padding: 70px 0px;
+}
+
+.limited-time-heading h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+/* LIMITED Time section end  */
+
+
+/* bonus section start  */
+section.bonus-part-1 {
+  padding: 70px 0px;
+}
+
+.bonus-part1-des h5 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.bonus-part1-des p {
+  padding-left: 18px;
+}
+
+/* bonus section end  */
+
+
+/* deal sectin start  */
+section.deal-section {
+  padding: 70px 0px;
+}
+
+.deal-heading h2 {
+  font-size: 33px;
+  color: #fff;
+  text-align: center;
+  line-height: 53px;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.deal-des h5 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.deal-des h5:last-child {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.deal-add-cart-img {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* deal section end  */
+
+
+/* book provied  section start */
+section.book-provied-sectoin {
+  padding: 80px 0px;
+}
+
+.book-provied-heading h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 19px;
+}
+
+/* book provied  section end*/
+
+
+/* my offer section start  */
+
+.my-offer-heading h2 {
+  font-size: 33px;
+  line-height: 53px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Raleway";
+}
+.my-offer-heading.cngavail h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.my-offer-heading h2 span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+section.my-offer-section {
+  background: #F2F3F7;
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+
+.my-offer-left {
+  padding-right: 100px;
+}
+
+/* my offer section end  */
+
+/* box img sectoin  */
+section.box-img-section {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.box-img1 img {
+  width: 100%;
+}
+
+/* starting now section  start*/
+
+.start-now-heading h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-img1 img {
+  width: 100%;
+}
+
+.start-now-cart-img {
+  text-align: center;
+}
+
+.start-now-des p {
+  text-align: center;
+  font-weight: 700;
+}
+
+section.start-now-section {
+  padding: 60px 0px;
+}
+
+.start-now-des {
+  margin-top: 20px;
+}
+
+.ration-img {
+  text-align: center;
+}
+
+/* starting now section end */
+
+
+/* complete system section  */
+section.complete-system {
+  padding: 40px 0px;
+}
+
+.complete-system-heading h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 33px;
+  line-height: 53px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.complete-system-des p {
+  color: #fff;
+}
+
+/* action now section  */
+.action-now-heading h2 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.action-now-heading {
+  margin-bottom: 25px;
+}
+
+.action-now-signature h5 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.action-now-signature h5 a {
+  color: #AF3334;
+  font-weight: 700;
+}
+
+.action-now-signature h5 a:hover {
+  color: #A370FF;
+}
+
+.action-now-signature img {
+  max-width: 260px;
+}
+
+.action-now-signature {
+  padding-bottom: 20px;
+}
+
+.action-now-signature p {
+  line-height: 30px;
+}
+
+.action-now-des h5 {
+  text-align: center;
+}
+
+.action-now-cart {
+  text-align: center;
+}
+
+section.action-now-section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+/* footer section  */
+.footer-box p {
+  line-height: 10px;
+}
+
+.footer-box ul li {
+  display: inline-block;
+  line-height: 32px;
+}
+
+.footer-box a {
+  color: #ae3434;
+}
+
+.footer-box a:hover {
+  color: #A564FF;
+}
+
+footer {
+  background: #F2F3F7;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.sticky-footer {
+  background: #224F6B;
+  margin: 0px 15px;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.sticky-footer span {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px !important;
+  text-transform: none;
+  color: #fff;
+}
+
+.sticky-footer a {
+  float: right;
+  color: #fff;
+  padding-right: 15px;
+  font-size: 23px;
+}
+
+
+
+
+
+
+/************** Template CSS End **************/
